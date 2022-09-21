@@ -124,4 +124,7 @@ li {
 .developer p {
   text-align: right;
   margin: 0 25px 0 0;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
  }
