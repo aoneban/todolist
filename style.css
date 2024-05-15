@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -7,21 +7,22 @@
   box-sizing: border-box;
 }
 
-html {
-  background: burlywood;
-}
-
 body {
-  font-family: "Shadows Into Light", cursive;
-  min-height: 100%;
+  font-family: 'Shadows Into Light', cursive;
+  background-image: url('./bg_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
-  margin: 30px auto;
+  margin: 10px auto;
+  color: aliceblue;
+  font-size: 48px;
 }
 
 li {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .container {
@@ -39,15 +40,16 @@ li {
   border: 1px solid #999;
   padding: 10px;
   outline: none;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 25px;
   color: black;
   font-weight: 700;
+  opacity: 0.9;
 }
 
 .close {
   text-align: right;
-  background: orange;
+  background: #b92eb9;
   font-family: sans-serif;
   height: 28px;
   padding-bottom: -15px;
@@ -61,10 +63,12 @@ li {
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
+  transition: background 0.5s ease;
 }
 
 .close:hover {
-  background: red;
+  background: rgb(198, 115, 233);
 }
 
 .oneTask {
@@ -75,32 +79,33 @@ li {
 }
 
 .oneTask::before {
-  content: "\2714";
+  content: '\2714';
   margin-right: 10px;
 }
 
 .btn {
   height: 40px;
-  width: 100px;
+  width: 101px;
   background: lightgreen;
   border: 1px solid #999;
   cursor: pointer;
   margin-left: -9px;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 25px;
   color: black;
   font-weight: 700;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background: orangered;
-  border: 2px solid orangered;
-  color: white;
+  background: rgb(130, 209, 143);
 }
 
 .body ul li {
   list-style: none;
-  background-color: aliceblue;
+  background-color: lightblue;
+  opacity: 0.9;
+  font-size: 1.4em;
   width: 499px;
   min-height: 41px;
   padding: 6px 0 0 20px;
@@ -112,6 +117,7 @@ li {
   font-family: inherit;
   position: relative;
   padding-right: 50px;
+  overflow: hidden;
 }
 
 .task {
@@ -132,4 +138,5 @@ li {
   position: fixed;
   bottom: 10px;
   right: 10px;
- }
+  color: aliceblue;
+}
