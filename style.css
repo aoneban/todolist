@@ -30,8 +30,12 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 200px auto;
+  margin: 100px auto 50px auto;
   width: 100vh;
+}
+
+.body-tasks {
+  min-height: 400px;
 }
 
 #currInput {
@@ -101,7 +105,7 @@ li {
   background: rgb(130, 209, 143);
 }
 
-.body ul li {
+.body-tasks ul li {
   list-style: none;
   background-color: lightblue;
   opacity: 0.9;
@@ -139,4 +143,6 @@ li {
   bottom: 10px;
   right: 10px;
   color: aliceblue;
+  background-color: black;
+  padding: 0 7px;
 }
